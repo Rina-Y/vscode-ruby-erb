@@ -7,7 +7,9 @@ const erb_closer_regex = /-?%>/;
 const erb_blocks = [
         ['<%=', '%>'],
         ['<%', '%>'],
-        ['<%#', '%>']
+        ['<%#', '%>'],
+	['<%=', '-%>'],
+        ['<%', '-%>']
       ];
 
 function activate(context) {
